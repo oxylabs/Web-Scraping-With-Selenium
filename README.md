@@ -1,4 +1,4 @@
-# Web Scraping with Selenium
+# Web Scraping With Selenium
 
 ## Table of Contents
 
