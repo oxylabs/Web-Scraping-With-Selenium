@@ -233,9 +233,3 @@ The main benefits of Real-Time Crawler when comparing with Selenium are:
 - Easily scalable
 - Guaranteed 100% success rates per successful requests
 - Has a built-in proxy rotation tool
-
-## Conclusion
-
-Selenium is a great tool for web scraping, especially when learning the basics. But, depending on your goals, it is sometimes easier to choose an already-built tool that does web scraping for you. Building your own scraper is a long and resource-costly procedure that might not be worth the time and effort.
-
-To learn more about Real-Time Crawler and how to integrate it, you can check out the [Real-Time Crawler quick start guide](https://oxylabs.io/blog/real-time-crawler-quick-start-guide), or if you have any product related questions, contact us at [hello@oxylabs.io](mailto:hello@oxylabs.io)
