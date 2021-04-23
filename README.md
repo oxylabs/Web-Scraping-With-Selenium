@@ -2,8 +2,6 @@
 
 ## Table of Contents
 
-- [Web Scraping with Selenium](#web-scraping-with-selenium)
-  - [Table of Contents](#table-of-contents)
   - [Setting up Selenium](#setting-up-selenium)
     - [Selenium Package](#selenium-package)
     - [Selenium Drivers](#selenium-drivers)
