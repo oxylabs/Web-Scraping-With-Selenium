@@ -16,7 +16,6 @@
     - [Explicit Waits](#explicit-waits)
   - [Selenium vs Puppeteer](#selenium-vs-puppeteer)
   - [Selenium vs Scraping Tools](#selenium-vs-scraping-tools)
-  - [Conclusion](#conclusion)
 
 Web scraping involves two broad categories of web pages—pages that need rendering and pages that do not need rendering. Web scraping the pages that need rendering is often called web scraping dynamic web pages. This is where Selenium shines.
 
