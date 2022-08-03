@@ -183,8 +183,8 @@ However, for web scraping tasks, Selenium is perhaps more complex than it needs 
 
 In the case of Puppeteer, though, the node package puppeteer includes Chromium. It means no browser or driver is needed. It makes it simpler. It also supports Chrome if that is what you need.
 
-On the other hand, multiple browser support is missing. Firefox support is limited. Google announced [Puppeteer for Firefox](https://www.npmjs.com/package/puppeteer-firefox), but it was soon deprecated. As of writing this, [Firefox support is experimental](https://github.com/puppeteer/puppeteer#q-which-firefox-version-does-puppeteer-use). So, to sum up, if you need a lightweight and fast headless browser for web scraping, Puppeteer would be the best choice. You can check our [Puppeteer tutorial](https://oxylabs.io/blog/puppeteer-tutorial) for more information.
+On the other hand, multiple browser support is missing. Firefox support is limited. Google announced [Puppeteer for Firefox](https://www.npmjs.com/package/puppeteer-firefox), but it was soon deprecated. As of writing this, [Firefox support is experimental](https://github.com/puppeteer/puppeteer#q-which-firefox-version-does-puppeteer-use). So, to sum up, if you need a lightweight and fast headless browser for web scraping, Puppeteer would be the best choice. You can check our [Puppeteer tutorial](https://oxy.yt/Rr4w) for more information.
 
 ## Selenium vs Scraping Tools
 
-Selenium is great if you want to learn web scraping. We recommend using it together with BeautifulSoup as well as focus on learning HTTP protocols, methods on how the server and browser exchange data, and how cookies and [headers](https://oxylabs.io/blog/http-headers-explained) work.
+Selenium is great if you want to learn web scraping. We recommend using it together with BeautifulSoup as well as focus on learning HTTP protocols, methods on how the server and browser exchange data, and how cookies and [headers](https://oxy.yt/nr7T) work.
