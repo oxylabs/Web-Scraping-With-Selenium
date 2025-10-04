@@ -4,8 +4,10 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 
-CHROME_DRIVER_PATH = 'c:/WebDrivers/chromedriver.exe'
+# CHROME_DRIVER_PATH = 'chromedriver.exe'
 HOMEPAGE = "http://books.toscrape.com"
 
 
@@ -13,12 +15,12 @@ def get_data(url, categories):
     browser_options = ChromeOptions()
     browser_options.headless = True
 
-    driver = Chrome(executable_path=CHROME_DRIVER_PATH, options=browser_options)
+    driver = Chrome(service=Service(ChromeDriverManager().install()))
     driver.get(url)
     driver.implicitly_wait(10)
     data = []
     for category in categories:
-        humor = driver.find_element_by_xpath(f'//a[contains(text(),{category})]')
+        humor = driver.find_element(By.XPATH, f'//a[contains(text(),{category})]')
         humor.click()
 
         try:
@@ -29,9 +31,9 @@ def get_data(url, categories):
             raise e
 
         for book in books:
-            title = book.find_element_by_css_selector("h3 > a")
-            price = book.find_element_by_css_selector(".price_color")
-            stock = book.find_element_by_css_selector(".instock.availability")
+            title = book.find_element(By.CSS_SELECTOR, "h3 > a")
+            price = book.find_element(By.CSS_SELECTOR, ".price_color")
+            stock = book.find_element(By.CSS_SELECTOR, ".instock.availability")
             data.append({
                 'title': title.get_attribute("title"),
                 'price': price.text,
